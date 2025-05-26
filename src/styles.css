@@ -1,0 +1,40 @@
+/* styles.css */
+body {
+    background-color: #d9c5b2;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Asegúrate de que cubra todo el viewport */
+  }
+  .flower-rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 999;
+  }
+  
+  .flower {
+    position: absolute;
+    font-size: 2.5rem;
+    animation: fall 5s linear forwards;
+  }
+  
+  /* Animación de caída */
+  @keyframes fall {
+    0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+  }
+  
+  /* Posiciones aleatorias */
+  .flower:nth-child(1) { left: 5%; animation-duration: 3s; }
+  .flower:nth-child(2) { left: 15%; animation-duration: 4s; }
+  .flower:nth-child(3) { left: 25%; animation-duration: 3.5s; }
+  .flower:nth-child(4) { left: 40%; animation-duration: 4.5s; }
+  .flower:nth-child(5) { left: 55%; animation-duration: 3.8s; }
+  .flower:nth-child(6) { left: 70%; animation-duration: 4.2s; }
+  .flower:nth-child(7) { left: 85%; animation-duration: 5s; }
+  .flower:nth-child(8) { left: 95%; animation-duration: 3.7s; }
+  
