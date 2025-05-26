@@ -11,3 +11,4 @@ Currently, two official plugins are available:
 # yukio2
 # yukio2
 # yukio2
+# yukio2
